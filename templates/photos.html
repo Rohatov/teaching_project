@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h4>Dars jarayonidan <em>fotolavhalar</em></h4>
+              </div>
+            </div>
+              <div class="col-lg-12">
+                <div class="owl-testimonials owl-carousel testimonials" style="position: relative; z-index: 5;">
+                  {% for photo in photos %}
+                  <div class="item">
+                    {% if photo.photo %}
+                      <div class="image-container">
+                        <img src="{{ photo.photo.url }}" alt="">
+                      </div>
+                    {% endif %}
+                    <div class="title-container">
+                      <h4>Catherine Walk</h4>
+                      <p>“Just think about TemplateMo if you need free CSS templates for your website”</p>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>            
+          </div>
+        </div>
+      </section>
+{% endblock content %}

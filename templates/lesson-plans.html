@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="lesson" id="lesson">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h4>Mening <em>dars ishlanmalarim</em></h4>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="category-menu">
+          {% for cat in categories %}
+            <a href="{% url 'home:plans' cat.id %}" class="category-item" id="nav-{{ cat.name }}-tab" data-toggle="tab" href="#nav-{{ cat.name }}" role="tab" aria-controls="nav-{{ cat.name }}" aria-selected="false">{{ cat.name }} </a>
+          {% endfor %}
+        </div>
+        <div class="owl-service-item owl-carousel">
+        {% for plan in plans %}
+          <div class="item">
+            <div class="service-item">
+              <a href="{{ plan.file.url }}">
+              <img src="{{ plan.photo.url }}" class="card-img-top" alt="{{ plan.title }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ plan.title }}</h5>
+                <p class="card-text">{{ plan.desc }}</p>
+              </a>
+            </div>
+          </div>
+          </div>
+        {% endfor %}
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
