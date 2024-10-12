@@ -42,12 +42,3 @@ class PhotosView(ListView):
     paginate_by = 6
     context_object_name = 'photos'
 
-# class CategoryView(ListView):
-#     template_name = 'lesson-plans.html'
-#     model = Category
-#     context_object_name = 'categories'
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         print(context['categories'])  # Konsolga chiqadi
-#         return context
-

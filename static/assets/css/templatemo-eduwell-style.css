@@ -676,6 +676,7 @@ section.main-banner {
 
 .main-banner {
   padding-top: 180px;
+  height: 700px;
 }
 
 .main-banner .right-image {
@@ -686,6 +687,9 @@ section.main-banner {
 
 .main-banner .right-image img {
   position: relative;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  height: 600px;
   z-index: 2;
 }
 
@@ -713,11 +717,13 @@ section.main-banner {
 .main-banner .header-text h1 {
   position: relative;
   z-index: 2;
-  font-size: 25px;
+  font-size: 50px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #dc8cdb;
-  font-family: 'Times New Roman', Times, serif;
+  color: #bc57bb;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
   text-align: center;
 }
 
@@ -751,6 +757,68 @@ section.main-banner {
 services
 ---------------------------------------------
 */
+
+.cormorant-garamond-light {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond-medium {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-garamond-semibold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-garamond-bold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-garamond-light-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cormorant-garamond-regular-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-garamond-medium-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cormorant-garamond-semibold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cormorant-garamond-bold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 
 /* .lesson .item {
   border-radius: 15px;
@@ -808,7 +876,7 @@ services
   border-radius: 15px;
   text-align: center;
   padding: 30px 15px;
-  margin: 15px;
+  /* margin: 5px; */
   transition: all .3s;
   display: flex;
   flex-direction: column;
@@ -818,6 +886,11 @@ services
   height: 500px; /* Bo'yi bir xil qilib belgilandi */
   background-color: #f9f9f9;
 }
+
+/* .lesson .col-lg-12 {
+  padding-right: 0;
+  padding-left: 0;
+} */
 
 .lesson .item:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
